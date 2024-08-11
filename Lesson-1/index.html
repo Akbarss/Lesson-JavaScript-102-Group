@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1>Привет, мир!</h1>
+	<p id="greeting"></p>
+
+	<h1>Работа с переменными</h1>
+	<p id="result"></p>
+
+
+	<script>
+		console.log('Это ваш первый JavaScript код!');
+
+		document.getElementById('greeting').innerText = 'Добро пожаловать на мою страницу!';
+
+		let userName = 'Алексей';
+		const birthYear = 2004;
+		let currentYear = 2024;
+
+		let age = currentYear - birthYear;
+
+		let message = 'Привет, ' + userName + '! Тебе ' + age + ' лет.';
+
+		document.getElementById('result').innerText = message;
+
+		console.log(message);
+	</script>
+</body>
+
+</html>
